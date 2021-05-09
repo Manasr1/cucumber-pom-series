@@ -9,7 +9,8 @@ import org.junit.runner.RunWith;
         features = {"src/test/resources/AppFeatures"},
         glue = {"stepsdefinitions", "AppHooks"},
         plugin = {"pretty",
-                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+                "json:target/cucumber.json"}
 )
 
 public class MyTestRunner {
